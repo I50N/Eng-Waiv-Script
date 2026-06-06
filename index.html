@@ -65,10 +65,18 @@
             text-align: center;
         }
 
-        img.logo {
-            display: block;
-            margin: 0 auto 20px;
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        img.logo, img.logo2 {
             max-width: 180px;
+            max-height: 100px;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -76,7 +84,10 @@
 
 <div class="container">
 
-    <img src="logo.png" alt="NMS Insurance Services Logo" class="logo">
+    <div class="logo-container">
+        <img src="logo2.png" alt="Ison Xperiences Logo" class="logo2">
+        <img src="logo.png" alt="NMS Insurance Services Logo" class="logo">
+    </div>
 
     <h1>NMS Script: Ison Xperiences</h1>
     <h2>Subscription Waiver Loss of Income</h2>
@@ -85,7 +96,7 @@
         <h3>Introduction</h3>
 
         <p>
-            Good day, my name is <strong>[Agent Name]</strong>, and I’m calling from 
+            Good day, my name is <strong>[Agent Name]</strong>, and I'm calling from 
             <strong>IsonXperiences</strong> on behalf of <strong>NMS/Multichoice</strong>.
         </p>
 
@@ -123,7 +134,7 @@
 
         <div class="highlight">
             <p>
-                Mr./Mrs. ___________, I’ve noticed that you don’t have Subscription Waiver Loss of Income.
+                Mr./Mrs. ___________, I've noticed that you don't have Subscription Waiver Loss of Income.
             </p>
 
             <p>
